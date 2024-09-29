@@ -1,0 +1,13 @@
+model_name: "gpt-3.5-turbo-0125"
+model_folder_name: "gpt-3-5-turbo-0125"
+is_openai_model: true
+
+base_output_path: "output"
+
+output_game_folder: ${base_output_path}/${model_folder_name}/games
+structured_context_save_path: ${base_output_path}/${model_folder_name}/evaluation
+hallucination_detection_save_path: ${base_output_path}/${model_folder_name}/evaluation/hallucination_detection
+annotated_data_save_path: ${base_output_path}/${model_folder_name}/annotated
+
+evaluation_phase: "first_order" # first_order for intent guessing, other options - intent_summarization, hallucination_detection
+model_evaluation_save_path: ${base_output_path}/${model_folder_name}/evaluation
